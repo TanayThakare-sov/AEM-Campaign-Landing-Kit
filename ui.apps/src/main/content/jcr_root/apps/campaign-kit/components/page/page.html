@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${properties.jcr:title}</title>
+  <meta name="description" content="${properties.jcr:description}">
+  <meta property="og:title" content="${properties.jcr:title}">
+  <sly data-sly-call="${clientlib.css @ categories='campaign-kit.site'}"/>
+</head>
+<body>
+  <main data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}"></main>
+  <sly data-sly-call="${clientlib.js @ categories='campaign-kit.site'}"/>
+</body>
+</html>
